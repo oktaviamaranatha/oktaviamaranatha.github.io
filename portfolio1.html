@@ -51,7 +51,7 @@ https://templatemo.com/tm-567-nomad-force
                     <div class="d-flex justify-content-center align-items-center">
                         <a href="#" class="text-secondary-white-color social-share-link">
                             <!-- <img src="images/portfolio/tableau.png" class="img-fluid news-detail-image" alt=""> -->
-                            Tools : Pandas - Tableau
+                            Tools : Python & Tableau
                         </a>
 
                         <!-- <a href="#" class="social-share-link bi-bookmark-fill ms-3 me-4"></a>
@@ -110,10 +110,16 @@ https://templatemo.com/tm-567-nomad-force
                             <h4 class="mb-3" data-aos="fade-up">Retail Sales Analytics</h4>
 
                             <div data-aos="fade-up">
-                                <!-- <i class="bi-notes me-1 mb-2 mb-lg-0"></i> -->
-                                Data Source : <br>
-                                <a href="https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset" class="text-warning custom-link"><strong>Kaggle</strong></a>
+                                <!-- <i class="bi-notes me-1 mb-2 mb-lg-0"></i> -->                                
+                                <strong>Overview</strong><br>
+                                Retail analytics is the science of collecting, analyzing, and reporting on data related to a retailer's operations. 
+                                It complements the art of retail. 
                                 <br>
+                                In this case, we apply retail analytics to analyzing customer behavior and measuring the effectiveness of marketing campaigns.
+                                <br><br>
+                                <strong>Data Source : </strong><br>
+                                <a href="https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset" class="text-warning custom-link"><strong>Kaggle</strong></a>
+
                             </div>
 
                             <div data-aos="fade-up">
@@ -148,7 +154,7 @@ https://templatemo.com/tm-567-nomad-force
                                     <!-- <figcaption class="figure-caption text-end">A caption for the above image.</figcaption> -->
                                 </figure>
                                 <br>
-                                <strong>Note: </strong> result tells us there are 1000 rows and 9 columns. The info() method also tells us how many Non-Null values there are present in each column. In our dataset, it seems like there are none of Non-Null values, which means that all rows have value at all columns.
+                                <strong>Note: </strong> result tells us there are 1000 rows and 9 columns. The <span class="text-danger">info()</span> method also tells us how many Non-Null values there are present in each column. In our dataset, it seems like there are none of Non-Null values, which means that all rows have value at all columns.
                                 <br>
                             </div>
 
@@ -172,7 +178,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <br>
                                 <h6> 4. Cleaning Wrong Format</h6>
                                 <br>
-                                <strong>Note: </strong> In our dataset, we provide the date as strings and pandas will automatically parse the column as a object dtype. In order to do so, we simply need to call the to_datetime() method and assign the result back to the original column. Additionally, we specify the format of the dates to make sure that pandas parses them correctly.
+                                <strong>Note: </strong> In our dataset, we provide the date as strings and pandas will automatically parse the column as a object dtype. In order to do so, we simply need to call the <span class="text-danger">to_datetime()</span> method and assign the result back to the original column. Additionally, we specify the format of the dates to make sure that pandas parses them correctly.
                                 <br>
                                 <figure class="figure">
                                     <img src="images/portfolio/1/wrong format.png" class="img-fluid news-image" alt="">
@@ -196,7 +202,7 @@ https://templatemo.com/tm-567-nomad-force
                                 </figure>
 
                                 <br>
-                                <strong>Note: </strong> It returns False, which means there are no duplicates in out dataset.
+                                <strong>Note: </strong> It returns False, which means there are no duplicates in our dataset.
                             </div>
 
                             <div data-aos="fade-up">
@@ -220,40 +226,57 @@ https://templatemo.com/tm-567-nomad-force
                                 <h6> 7. Data Visualization with Tableau</h6>
 
                                 <br>
-                                <strong>DASHBOARD</strong>
+                                <strong>A. DASHBOARD</strong>
                                 <br>
                                 <figure class="figure">
-                                    <img src="images/portfolio/Dashboard 1.png" class="img-fluid news-image" alt="">
-
+                                    <a href="images/portfolio/Dashboard 1.png" class="image-popup">
+                                        <img src="images/portfolio/Dashboard 1.png" class="img-fluid portfolio-image" alt="">
+                                    </a>
                                     <!-- <figcaption class="figure-caption text-end">A caption for the above image.</figcaption> -->
                                 </figure>
+                            </div>
 
+                            <div data-aos="fade-up">
                                 <br>
-                                <strong>REVENUE BASED ON PRODUCT CATEGORY</strong>
+                                <strong>B. REVENUE BASED ON GENDER</strong>
                                 <br>
                                 <figure class="figure">
-                                    <img src="images/portfolio/1/Revenue based on Product Category.png" class="img-fluid news-image" alt="">
-
+                                    <a href="images/portfolio/1/Revenue based on Gender.png" class="image-popup">
+                                        <img src="images/portfolio/1/Revenue based on Gender.png" class="img-fluid portfolio-image" alt="">
+                                    </a>
                                     <!-- <figcaption class="figure-caption text-end">A caption for the above image.</figcaption> -->
                                 </figure>
-
                                 <br>
-                                <strong>REVENUE BASED ON AGE</strong>
+                                <strong class="text-warning">Note:</strong> From this chart, we can conclude that the majority of our customers are female with 51.061%.
+                            </div>
+
+                            <div data-aos="fade-up">
+                                <br>
+                                <strong>C. REVENUE BASED ON PRODUCT CATEGORY</strong>
                                 <br>
                                 <figure class="figure">
-                                    <img src="images/portfolio/1/Revenue based on Age.png" class="img-fluid news-image" alt="">
-
+                                    <a href="images/portfolio/1/Revenue based on Product Category.png" class="image-popup">
+                                        <img src="images/portfolio/1/Revenue based on Product Category.png" class="img-fluid portfolio-image" alt="">
+                                    </a>
                                     <!-- <figcaption class="figure-caption text-end">A caption for the above image.</figcaption> -->
                                 </figure>
-
                                 <br>
-                                <strong>REVENUE BASED ON GENDER</strong>
+                                <strong class="text-warning">Note:</strong> From this chart, we can conclude that women prefer to buy our clothing products and men prefer to buy our electronic products.
+                            </div>
+
+                            <div data-aos="fade-up">
+                                <br>
+                                <strong>D. REVENUE BASED ON AGE</strong>
                                 <br>
                                 <figure class="figure">
-                                    <img src="images/portfolio/1/Revenue based on Gender.png" class="img-fluid news-image" alt="">
-
+                                    <a href="images/portfolio/1/Revenue based on Age.png" class="image-popup">
+                                        <img src="images/portfolio/1/Revenue based on Age.png" class="img-fluid portfolio-image" alt="">
+                                    </a>
                                     <!-- <figcaption class="figure-caption text-end">A caption for the above image.</figcaption> -->
                                 </figure>
+                                <br>
+                                <strong class="text-warning">Note:</strong> From this chart, we can conclude that the majority of our customers are aged 20 to 60 years old.
+                            </div>
 
                                 <!-- <br>
                                 <figure class="figure">
@@ -261,26 +284,74 @@ https://templatemo.com/tm-567-nomad-force
 
                                 </figure> -->
 
+                            <div data-aos="fade-up">
                                 <br>
-                                <strong>REVENUE PER PERIODE</strong>
+                                <strong>E. REVENUE PER PERIODE</strong>
                                 <br>
                                 <figure class="figure">
-                                    <img src="images/portfolio/1/Revenue per Periode.png" class="img-fluid news-image" alt="">
-
+                                    <a href="images/portfolio/1/Revenue per Periode.png" class="image-popup">
+                                        <img src="images/portfolio/1/Revenue per Periode.png" class="img-fluid portfolio-image" alt="">
+                                    </a>
                                     <!-- <figcaption class="figure-caption text-end">A caption for the above image.</figcaption> -->
                                 </figure>
-
                                 <br>
-                                <strong>NUMBER OF PRODUCT SOLD</strong>
+                                <strong class="text-warning">Note:</strong>
+                                <br>
+                                <ul>
+                                    <li>The chart shows data from January to December 2023. There are sales on January 1, 2024, with total amount of 1,530K.</li>
+                                    <li>From this chart, we can conclude that the highest revenue was achieved in May 2023.</li>
+                                </ul>
+                            </div>
+
+                            <div data-aos="fade-up">
+                                <br>
+                                <strong>F. NUMBER OF PRODUCT SOLD</strong>
                                 <br>
                                 <figure class="figure">
                                     <img src="images/portfolio/1/Number of Product Sold.png" class="img-fluid news-image" alt="">
 
                                     <!-- <figcaption class="figure-caption text-end">A caption for the above image.</figcaption> -->
                                 </figure>
-
                                 <br>
-                                <!-- <strong>Note: </strong> To continue data visualization in tableau, we export the processed dataset. -->
+                                <strong class="text-warning">Note: </strong> From this chart, we can conclude that the best selling products are clothing products.
+                            </div>
+
+                            <div data-aos="fade-up">
+                                <!-- <i class="bi-notes me-1 mb-2 mb-lg-0"></i> -->
+                                <br>
+                                <h6> 8. Conclusion</h6>
+                                <br>
+                                <strong>Based on our analysis,</strong> there are some conclusions.
+                                <ul>
+                                    <li>Most customers are female.</li>
+                                    <li>Favorite items of female customers are clothing products, while male customers are electronic products.</li>
+                                    <li>Most of the customers are aged 20 to 60 years.</li>
+                                    <li>The highest revenue was received in May 2023.</li>
+                                    <li>The best-selling products are clothing products.</li>
+                                </ul>
+                            </div>
+
+                            <div data-aos="fade-up">
+                                <!-- <i class="bi-notes me-1 mb-2 mb-lg-0"></i> -->
+                                <br>
+                                <h6> 8. Recommendation</h6>
+                                <br>
+                                <strong>Based on our analysis,</strong> there are some conclusions.
+                                <ul>
+                                    <li>
+                                        In this company, there are only 3 product categories with revenues that are not too far apart. 
+                                        This proves that the products in the company are quite attractive to customers. 
+                                        Therefore, the company can <strong class="text-primary">increase the product categories offered,</strong> so that it can create greater opportunities to get revenue from customers.
+                                    </li>
+                                    <li>
+                                        From the analysis, it is known that the least number of customer age categories is under 20 years old. 
+                                        The company can attract customers at that age by <strong class="text-primary">providing discounts by shopping with a student card.</strong>
+                                    </li>
+                                    <li>
+                                        The decline in revenue mostly occurs at the end of the first, second, and third quarters. 
+                                        The company can <strong class="text-primary">provide coupons with a certain minimum spending requirement,</strong> which are drawn quarterly to stabilize revenue in each quarter.
+                                    </li>
+                                </ul>
                             </div>
                             
                         </div>
